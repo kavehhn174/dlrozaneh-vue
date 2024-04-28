@@ -1,9 +1,11 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import TopBar from '@/components/HomeView/TopBar.vue'
+import Header from '@/components/HomeView/LogoHeader.vue'
+import HomeContent from '@/components/HomeView/HomeContent.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <TopBar></TopBar>
+  <Header></Header>
+  <HomeContent/>
 </template>

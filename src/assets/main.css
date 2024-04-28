@@ -1,35 +1,47 @@
-@import './base.css';
+@import "/node_modules/vazirmatn/misc/Farsi-Digits/Vazirmatn-FD-font-face.css";
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  font-weight: normal;
+.farsi-digits {
+  font-family: "Vazirmatn FD", sans-serif!important;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+body {
+  font-family: "Vazirmatn FD", sans-serif!important;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+body,
+.hide-overflow {
+  overflow-x: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+button:focus {
+  outline: none !important;
+}
+
+/* Remove Number Input Arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
