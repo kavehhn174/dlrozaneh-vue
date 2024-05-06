@@ -12,14 +12,6 @@ body {
   font-family: "Vazirmatn FD", sans-serif!important;
 }
 
-body,
-.hide-overflow {
-  overflow-x: hidden;
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-}
-
 button {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
